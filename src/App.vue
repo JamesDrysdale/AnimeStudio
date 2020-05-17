@@ -11,6 +11,7 @@
 import { eventBus } from "@/main.js"
 import FilmList from "@/components/FilmList";
 
+
 export default {
   name: "app",
   components: {
