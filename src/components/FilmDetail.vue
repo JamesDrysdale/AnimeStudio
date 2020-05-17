@@ -6,7 +6,7 @@
             <div id="flexWrapper">
                 <div id="left">
                     <h3>Film Facts</h3>
-                    <p><span class="fact">  </span>: </p>
+                    <p><span class="fact">Locations</span>: </p>
                     <p><span class="fact">  </span>: </p>
                 </div>
                 <div id="right">

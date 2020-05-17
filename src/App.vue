@@ -1,10 +1,16 @@
 <template lang="html">
   <div id="app">
-    <h1>Anime Studio</h1>
-    <div id="list-info" v-if="films.length">
-      <film-list :films="films"></film-list>
-      <film-detail />
-    </div>
+    <header>
+      <h1>Ghibli Studio</h1>
+      <h2>Film Explorer</h2>
+    
+      <div id="list-info" v-if="films.length">
+        <film-list :films="films"></film-list>
+      </div>
+    </header>
+      <div>
+        <film-detail />
+      </div>
   </div>
 </template>
 
@@ -41,5 +47,16 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+header {
+  background-color: #109CEB;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
 
 </style>
