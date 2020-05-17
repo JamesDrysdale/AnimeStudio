@@ -58,4 +58,12 @@ export default {
     font-weight: bold;
 }
 
+div {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#film-detail {
+    margin: 10px;
+}
+
 </style>
