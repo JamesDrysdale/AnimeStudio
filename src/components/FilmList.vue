@@ -10,13 +10,25 @@
 </template>
 
 <script>
+import { eventBus } from '../main.js'
 import FilmListItem from "@/components/FilmListItem"
 
 export default {
     name: "film-list",
+    data(){
+        return {
+            "selectedFilm": {},
+        }
+    },
     props: ["films"],
     components: {
         "film-list-item": FilmListItem
+    },
+    methods: {
+        handleSelect(){
+            this.search = ""
+            eventBus.$emit('film-selected', this.selectedFilm)
+        }
     }
 }
 </script>
@@ -47,6 +59,7 @@ export default {
 </script>
 -->
 
-<style>
+<style lang="css" scoped>
+
 
 </style>

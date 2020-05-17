@@ -3,6 +3,7 @@
     <h1>Anime Studio</h1>
     <div id="list-info" v-if="films.length">
       <film-list :films="films"></film-list>
+      <film-detail />
     </div>
   </div>
 </template>
@@ -10,12 +11,13 @@
 <script>
 import { eventBus } from "@/main.js"
 import FilmList from "@/components/FilmList";
-
+import FilmDetail from "@/components/FilmDetail";
 
 export default {
   name: "app",
   components: {
     "film-list": FilmList,
+    "film-detail": FilmDetail,
   },
   data() {
     return {
@@ -38,6 +40,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="css" scoped>
 
 </style>
